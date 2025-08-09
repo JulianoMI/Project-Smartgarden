@@ -1,12 +1,33 @@
 .App {
   min-height: 100vh;
   display: flex;
+}
+
+/* Sidebar-aware layout */
+.app-shell {
+  display: flex;
+  width: 100%;
+}
+
+.app-content {
+  margin-left: 250px; /* sidebar width */
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  display: flex;
   flex-direction: column;
 }
 
+/* Keep navbar fixed at top inside content area */
 main {
   flex: 1;
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 80px; /* fixed navbar */
+}
+
+@media (max-width: 1024px) {
+  .app-content {
+    margin-left: 72px;
+    width: calc(100% - 72px);
+  }
 }
 
 /* Page transitions */

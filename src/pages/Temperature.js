@@ -10,6 +10,7 @@ const Temperature = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
+  const [activeTab, setActiveTab] = useState('current'); // 'current' | 'stats' | 'history'
 
   // API base URL from config
   const API_BASE_URL = config.API_BASE_URL;
@@ -110,6 +111,27 @@ const Temperature = () => {
               Last updated: {formatTimestamp(lastUpdated)}
             </p>
           )}
+          {/* Tabs */}
+          <div className="temp-tab-bar">
+            <button
+              className={`temp-tab ${activeTab === 'current' ? 'active' : ''}`}
+              onClick={() => setActiveTab('current')}
+            >
+              Current
+            </button>
+            <button
+              className={`temp-tab ${activeTab === 'stats' ? 'active' : ''}`}
+              onClick={() => setActiveTab('stats')}
+            >
+              Statistics
+            </button>
+            <button
+              className={`temp-tab ${activeTab === 'history' ? 'active' : ''}`}
+              onClick={() => setActiveTab('history')}
+            >
+              History
+            </button>
+          </div>
         </div>
       </section>
 
@@ -126,7 +148,7 @@ const Temperature = () => {
       )}
 
       {/* Current Data */}
-      {currentData && (
+      {activeTab === 'current' && currentData && (
         <section className="current-data">
           <div className="container">
             <h2>Current Environment</h2>
@@ -173,7 +195,7 @@ const Temperature = () => {
       )}
 
       {/* Statistics */}
-      {statsData && (
+      {activeTab === 'stats' && statsData && (
         <section className="temperature-stats">
           <div className="container">
             <h2>Temperature Statistics</h2>
@@ -200,7 +222,7 @@ const Temperature = () => {
       )}
 
       {/* History */}
-      {historyData.length > 0 && (
+      {activeTab === 'history' && historyData.length > 0 && (
         <section className="temperature-history">
           <div className="container">
             <h2>Recent History</h2>

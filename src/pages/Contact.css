@@ -5,36 +5,42 @@
 /* Contact Hero */
 .contact-hero {
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  color: var(--text-primary);
   text-align: center;
 }
 
 .contact-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .contact-subtitle {
-  font-size: 1.25rem;
-  opacity: 0.9;
-  max-width: 600px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
 }
 
 /* Contact Content */
 .contact-content {
-  padding: 6rem 0;
-  background-color: var(--bg-primary);
+  padding: 4rem 0;
+  background: var(--bg-primary);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+.contact-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; }
+.contact-grid.single { grid-template-columns: 1fr; }
+
+/* Wizard */
+.wizard-steps { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+.wizard-step {
+  flex: 1; text-align: center; padding: 0.5rem; border-radius: 0.5rem;
+  background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-secondary);
 }
+.wizard-step.active { color: var(--primary-color); border-color: var(--primary-color); box-shadow: var(--glow-primary); }
+
+.form-actions { display: flex; gap: 1rem; }
 
 /* Contact Form */
 .contact-form-section h2 {
@@ -100,73 +106,7 @@
   text-align: center;
 }
 
-/* Contact Info */
-.contact-info-section h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: var(--text-primary);
-}
-
-.contact-info-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.contact-info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.contact-icon {
-  font-size: 2rem;
-  flex-shrink: 0;
-}
-
-.contact-details h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
-}
-
-.contact-details p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.social-links h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--bg-secondary);
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.5rem;
-  transition: all 0.2s ease;
-}
-
-.social-icon:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
-}
+/* Company info removed */
 
 /* FAQ Section */
 .faq {
@@ -201,6 +141,8 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; } }
+
 @media (max-width: 768px) {
   .contact-title {
     font-size: 2.5rem;

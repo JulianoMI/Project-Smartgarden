@@ -4,101 +4,70 @@ import './About.css';
 const About = () => {
   return (
     <div className="about">
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="about-hero">
         <div className="container">
           <div className="about-hero-content">
-            <h1 className="about-title">About SmartGarden</h1>
+            <h1 className="about-title">About TechNova</h1>
             <p className="about-subtitle">
-              Pioneering the future of smart home technology with innovative solutions that make life easier, 
-              more efficient, and more connected.
+              We build intelligent, sustainable living experiences through advanced IoT, edge computing,
+              and human-centered design.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="mission">
-        <div className="container">
-          <div className="mission-grid">
-            <div className="mission-content">
-              <h2>Our Mission</h2>
-              <p>
-                At SmartGarden, we believe that technology should enhance our lives, not complicate them. 
-                Our mission is to create intelligent, user-friendly smart home solutions that seamlessly 
-                integrate into your daily routine, providing comfort, security, and efficiency.
-              </p>
-              <p>
-                We're committed to developing cutting-edge technology that's accessible to everyone, 
-                making smart homes a reality for families worldwide.
-              </p>
-            </div>
-            <div className="mission-image">
-              <div className="mission-icon">🎯</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
+      {/* Company Snapshot */}
       <section className="values">
         <div className="container">
-          <h2 className="section-title text-center">Our Core Values</h2>
+          <h2 className="section-title text-center">Company Snapshot</h2>
           <div className="values-grid">
             <div className="value-card">
-              <div className="value-icon">💡</div>
-              <h3>Innovation</h3>
-              <p>We constantly push the boundaries of what's possible, creating breakthrough technologies that set new industry standards.</p>
+              <div className="value-icon">🌍</div>
+              <h3>Global Footprint</h3>
+              <p>Operating in 50+ countries with regional data centers for low-latency processing.</p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🤝</div>
-              <h3>Customer First</h3>
-              <p>Every decision we make is guided by our commitment to providing exceptional value and support to our customers.</p>
+              <div className="value-icon">⚙️</div>
+              <h3>Edge-first</h3>
+              <p>Privacy by default. 80% of automations run locally on our secure home hub.</p>
             </div>
             <div className="value-card">
-              <div className="value-icon">🌱</div>
+              <div className="value-icon">🔐</div>
+              <h3>Zero-Trust Security</h3>
+              <p>End-to-end encryption, hardware keys, and verifiable builds for every release.</p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">♻️</div>
               <h3>Sustainability</h3>
-              <p>We develop eco-friendly solutions that help reduce energy consumption and promote environmental responsibility.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">🔒</div>
-              <h3>Security</h3>
-              <p>Your privacy and security are our top priorities. We implement the highest standards of data protection.</p>
+              <p>Designed for longevity: modular hardware, OTA updates, and minimal standby power.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Timeline */}
       <section className="story">
         <div className="container">
           <div className="story-grid">
             <div className="story-image">
-              <div className="story-icon">📖</div>
+              <div className="story-icon">🕒</div>
             </div>
             <div className="story-content">
-              <h2>Our Story</h2>
-              <p>
-                SmartGarden was founded in 2020 by a team of passionate engineers and designers who 
-                shared a common vision: to make smart home technology accessible, reliable, and truly useful.
-              </p>
-              <p>
-                What started as a small startup has grown into a trusted name in smart home solutions, 
-                serving thousands of customers worldwide. Our journey has been driven by continuous 
-                innovation and an unwavering commitment to customer satisfaction.
-              </p>
+              <h2>Milestones</h2>
+              <p>From a research project to a global IoT platform powering millions of sensors.</p>
               <div className="story-stats">
                 <div className="story-stat">
-                  <div className="stat-number">2020</div>
-                  <div className="stat-label">Founded</div>
+                  <div className="stat-number">2019</div>
+                  <div className="stat-label">R&D Lab</div>
                 </div>
                 <div className="story-stat">
-                  <div className="stat-number">50+</div>
-                  <div className="stat-label">Team Members</div>
+                  <div className="stat-number">2021</div>
+                  <div className="stat-label">Public Launch</div>
                 </div>
                 <div className="story-stat">
-                  <div className="stat-number">25+</div>
-                  <div className="stat-label">Countries</div>
+                  <div className="stat-number">2024</div>
+                  <div className="stat-label">2.5M+ Devices</div>
                 </div>
               </div>
             </div>
@@ -106,54 +75,40 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Leadership */}
       <section className="team">
         <div className="container">
-          <h2 className="section-title text-center">Meet Our Team</h2>
+          <h2 className="section-title text-center">Leadership</h2>
           <div className="team-grid">
             <div className="team-card">
-              <div className="team-avatar">👨‍💼</div>
-              <h3>John Smith</h3>
-              <p className="team-role">CEO & Founder</p>
-              <p className="team-bio">
-                Former Google engineer with 15+ years of experience in IoT and smart home technology.
-              </p>
+              <div className="team-avatar">🧭</div>
+              <h3>Alex Rivera</h3>
+              <p className="team-role">Founder & CEO</p>
+              <p className="team-bio">Systems engineer focused on resilient, privacy-preserving home automation.</p>
             </div>
             <div className="team-card">
-              <div className="team-avatar">👩‍💻</div>
-              <h3>Sarah Johnson</h3>
-              <p className="team-role">CTO</p>
-              <p className="team-bio">
-                Expert in AI and machine learning, leading our technical innovation efforts.
-              </p>
+              <div className="team-avatar">🧪</div>
+              <h3>Priya Nair</h3>
+              <p className="team-role">Chief Scientist</p>
+              <p className="team-bio">Applied ML researcher specializing in energy optimization and anomaly detection.</p>
             </div>
             <div className="team-card">
-              <div className="team-avatar">👨‍🎨</div>
-              <h3>Mike Chen</h3>
-              <p className="team-role">Head of Design</p>
-              <p className="team-bio">
-                Award-winning designer focused on creating intuitive user experiences.
-              </p>
-            </div>
-            <div className="team-card">
-              <div className="team-avatar">👩‍🔬</div>
-              <h3>Emily Davis</h3>
-              <p className="team-role">Lead Engineer</p>
-              <p className="team-bio">
-                Specializes in embedded systems and IoT device development.
-              </p>
+              <div className="team-avatar">🎨</div>
+              <h3>Kenji Mori</h3>
+              <p className="team-role">Head of Product</p>
+              <p className="team-bio">Designs thoughtful experiences that make complex systems feel effortless.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact CTA */}
+      {/* CTA */}
       <section className="about-cta">
         <div className="container">
           <div className="about-cta-content">
-            <h2>Ready to Join the Smart Home Revolution?</h2>
-            <p>Discover how SmartGarden can transform your living space into an intelligent, connected environment.</p>
-            <a href="/contact" className="btn btn-primary">Get in Touch</a>
+            <h2>Building Homes That Think With You</h2>
+            <p>Discover how TechNova can help you reduce energy costs and elevate comfort.</p>
+            <a href="/contact" className="btn btn-primary">Talk to Our Team</a>
           </div>
         </div>
       </section>
